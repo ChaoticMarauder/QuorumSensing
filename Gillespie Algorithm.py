@@ -82,7 +82,7 @@ for i in range(n_simulations):
     ax[0].plot(time_points, pops[i,:,0], '-', lw=0.3, alpha=0.2,
                color=sns.color_palette()[0])
 
-# Plot mRNA mean
+# Plot mRNA mean trajectory
 ax[0].plot(time_points, pops[:,:,0].mean(axis=0), '-', lw=6, 
            color=sns.color_palette()[2])
 
@@ -91,7 +91,7 @@ for i in range(n_simulations):
     ax[1].plot(time_points, pops[i,:,1], 'k-', lw=0.3, alpha=0.2,
                color=sns.color_palette()[0])
 
-# Plot protein mean
+# Plot protein mean trajectory
 ax[1].plot(time_points, pops[:,:,1].mean(axis=0), 'r-', lw=6, 
            color=sns.color_palette()[1])
 
